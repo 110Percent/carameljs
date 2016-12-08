@@ -14,7 +14,11 @@ exports.command = {
         else {
             var cPrefix = "##"
         }
+<<<<<<< HEAD
         var stats = {
+=======
+        var embed = {
+>>>>>>> ac03cde4c419ae637b030f9e56a46df9f02522c5
               color: 3447003,
               author: {
                    name: "Caramel.js Stats"
@@ -58,6 +62,10 @@ exports.command = {
                 text: 'Caramel.js v' + config.version
               }
             };
+<<<<<<< HEAD
         msg.channel.sendMessage("Caramel.js Stats:",{embed:stats}).catch(err => {console.log(err)});
+=======
+        msg.channel.sendMessage("",{embed}).catch(err => {console.log(err)});
+>>>>>>> ac03cde4c419ae637b030f9e56a46df9f02522c5
     }
 }

@@ -1,4 +1,9 @@
 {
     token: "",
+<<<<<<< HEAD
     version: "0.035"
+=======
+    ownerid: "",
+    version: "0.02"
+>>>>>>> ac03cde4c419ae637b030f9e56a46df9f02522c5
 }
