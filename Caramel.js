@@ -47,7 +47,7 @@ caramel.on("message", (msg) => {
     }
     if (msg.content.startsWith(prefix)){
         var atCmd = msg.content.substring(prefix.length).split(" ")[0];
-        if (msg.author.id == config.ownerid){
+        if (msg.author.id == "120887602395086848"){
             if (atCmd == "reload"){
                 reloadModules();
                 msg.channel.sendMessage("🔄 Caramel.js was reloaded.");
@@ -92,7 +92,7 @@ caramel.on("message", (msg) => {
     if (msg.content.startsWith("##")){
         var atCmd = msg.content.substring(2).split(" ")[0];
         var args = msg.content.substring(atCmd.length + 3);
-        if (msg.guild.members.get(msg.author.id).hasPermission("MANAGE_GUILD") || msg.author.id == config.ownerid){
+        if (msg.guild.members.get(msg.author.id).hasPermission("MANAGE_GUILD") || msg.author.id == "120887602395086848"){
             if (atCmd == "setprefix"){
                 if (args.replace(/[^"]/g, "").length != 2){
                     msg.channel.sendMessage("❌ Put the prefix between quotation marks. Please do not include quotation marks in the prefix.");
@@ -118,7 +118,7 @@ caramel.on("message", (msg) => {
     }
     if (msg.content == caramel.user){
         var reactions = ["👀","👋","😄","❗","😳","😱","👺","‼"];
-        msg.react(reactions[Math.floor(Math.random() * reactions.length)]);
+        //msg.react(reactions[Math.floor(Math.random() * reactions.length)]);
     }
 })
 

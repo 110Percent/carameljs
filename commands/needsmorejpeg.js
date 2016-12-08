@@ -7,7 +7,7 @@ exports.command = {
     action: function(msg,args){
         var imgQual;
         var scan = 0;
-        imgQual = 3;
+        imgQual = 5;
         if (args){
             if (isAbsoluteUrl(args.split(" ")[0])){
                 if (args.split(" ")[0].match(/\.(jpeg|jpg|gif|png)$/) != null){
